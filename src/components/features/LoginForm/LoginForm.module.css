@@ -1,0 +1,57 @@
+@import '../../../globals/variables.css';
+
+.wrapper {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 36px 18px;
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.form {
+    margin-bottom: 26px;
+}
+
+.formRow {
+    margin-bottom: 28px;
+}
+
+.formRow:last-child {
+    margin-bottom: 0;
+}
+
+.error {
+    margin-top: 16px;
+    color: #ff354d;
+}
+
+
+@media (min-width: 600px) {
+    .wrapper {
+        border-radius: 4px;
+        padding: 52px 88px;
+        text-align: left;
+    }
+
+    .form {
+        margin-bottom: 22px;
+    }
+
+    .formRow {
+        margin-bottom: 12px;
+    }
+
+    .buttonWrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .error {
+        margin-top: 0;
+        margin-left: 12px;
+    }
+}

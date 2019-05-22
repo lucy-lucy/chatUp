@@ -1,0 +1,88 @@
+.wrapper {
+    background-color: #fff;
+    padding: 0 18px 26px;
+    border-radius: 4px;
+}
+
+.messages {
+    height: calc(100vh - 255px);
+    padding-top: 18px;
+    overflow-y: scroll;
+    margin-bottom: 24px;
+}
+
+.description {
+    font-size: 15px;
+}
+
+.message {
+    margin-bottom: 16px;
+    animation: fadeIn .23s ease-in-out;
+}
+
+.formWrapper {
+    position: relative;
+}
+
+.formWrapper::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: calc(100% + 38px);
+    position: absolute;
+    top: -24px;
+    left: -18px;
+    box-shadow: 0 -1px 2px #6d6d6d;
+}
+
+.controls {
+    display: flex;
+}
+
+.submitButton {
+    background-color: var(--main-blue);
+    font-size: 38px;
+    padding: 0;
+    color: #fff;
+    width: 50px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.submitButton:disabled {
+    opacity: 0.7;
+    cursor: default;
+    pointer-events: none;
+}
+
+.luckyBtn {
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@media (min-width: 600px) {
+    .wrapper {
+        padding: 26px;
+    }
+
+    .messages {
+        height: calc(50vh - 105px);
+        padding-top: 0;
+    }
+
+    .formWrapper::before {
+        width: calc(100% + 52px);
+        left: -26px;
+    }
+}

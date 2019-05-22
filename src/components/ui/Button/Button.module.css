@@ -1,0 +1,48 @@
+.button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 6px 32px 4px;
+    border-radius: 4px;
+    transition: all .23s ease-in-out;
+    white-space: nowrap;
+}
+
+.button:disabled {
+    opacity: 0.7;
+    cursor: default;
+    pointer-events: none;
+}
+
+.button_theme_default {
+    background-color: var(--main-blue);
+}
+
+.button_theme_default:hover {
+    background-color: var(--main-blue-hover);
+}
+
+.button_theme_red {
+    background-color: var(--main-red);
+}
+
+.button_theme_red:hover {
+    background-color: var(--main-red-hover);
+}
+
+.button_theme_gray {
+    background-color: var(--main-gray);
+}
+
+.button_theme_gray:hover {
+    background-color: var(--main-gray-hover);
+}
+
+
+@media (max-width: 599px) {
+    .button_smallOnPhone {
+        font-size: 13px;
+        padding: 3px 8px 2px;
+    }
+}

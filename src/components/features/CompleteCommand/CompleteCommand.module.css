@@ -1,0 +1,9 @@
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.button:last-child {
+    margin-right: 0;
+}
