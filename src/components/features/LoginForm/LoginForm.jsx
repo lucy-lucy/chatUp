@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import pt from 'prop-types';
 
 // Utils
-import isEmpty from '@tinkoff/utils/is/empty';
+import { emptyString } from '../../../utils/validate';
 
 // Components
 import Input from '../../ui/Input/Input';
@@ -39,7 +39,7 @@ class LoginForm extends PureComponent {
 
         const { login, password } = this.state;
 
-        if (isEmpty(login) || isEmpty(password)) {
+        if (emptyString(login) || emptyString(password)) {
             return this.setError('Fill in login and password!');
         }
         

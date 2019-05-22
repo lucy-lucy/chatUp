@@ -3,6 +3,7 @@ import pt from 'prop-types';
 
 // Utils
 import uuidv4 from 'uuid/v4';
+import { emptyString } from '../../../utils/validate';
 import isEmpty from '@tinkoff/utils/is/empty';
 
 // Components
@@ -87,7 +88,7 @@ class Chat extends PureComponent {
 
         const { message } = this.state;
 
-        if (!isEmpty(message)) {    
+        if (!emptyString(message)) {    
             this.addMessage(message)
             this.clearMessageInput();
         }
@@ -113,12 +114,12 @@ class Chat extends PureComponent {
         const { user: { name }, onLogout } = this.props;
         const { messages } = this.state;
 
-        if (isEmpty(messages)) {
+        if (emptyString(messages)) {
             return <span className={s.description}>Start conversation...</span>;
         }
 
         return messages.map(({ author, message, command, id }) => {    
-            if (!isEmpty(message)) {
+            if (!emptyString(message)) {
                 return <div key={id} className={s.message}>
                     <Message
                         text={message}
