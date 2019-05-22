@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/chatUp/static/css/main.ed322a3a.chunk.css",
+    "main.js": "/chatUp/static/js/main.d698935b.chunk.js",
+    "main.js.map": "/chatUp/static/js/main.d698935b.chunk.js.map",
+    "runtime~main.js": "/chatUp/static/js/runtime~main.26c1cb5a.js",
+    "runtime~main.js.map": "/chatUp/static/js/runtime~main.26c1cb5a.js.map",
+    "static/js/2.36503d98.chunk.js": "/chatUp/static/js/2.36503d98.chunk.js",
+    "static/js/2.36503d98.chunk.js.map": "/chatUp/static/js/2.36503d98.chunk.js.map",
+    "index.html": "/chatUp/index.html",
+    "precache-manifest.4f69c5036be181a220833d04114e4469.js": "/chatUp/precache-manifest.4f69c5036be181a220833d04114e4469.js",
+    "service-worker.js": "/chatUp/service-worker.js",
+    "static/css/main.ed322a3a.chunk.css.map": "/chatUp/static/css/main.ed322a3a.chunk.css.map",
+    "static/media/global.css": "/chatUp/static/media/BalooBhai-Regular.d99a6529.ttf",
+    "static/media/Layout.module.css": "/chatUp/static/media/background.09de02d0.jpg",
+    "static/media/MapCommand.module.css": "/chatUp/static/media/ottonova_guy.005444d4.png"
+  }
+}
