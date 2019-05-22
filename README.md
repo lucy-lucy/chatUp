@@ -14,3 +14,6 @@ The project uses a Google Map, so you have to set environment variable `REACT_AP
 
 The chat server itself can be accesed by `https://demo-chat-server.on.ag/`, but you can set environment variable `REACT_APP_SOCKET_URL` manually.
 
+## dependencies
+
+The project uses npm package [@tinkoff/utils](https://www.npmjs.com/package/@tinkoff/utils) to combine best utils from both `ramda` and `lodash`.
